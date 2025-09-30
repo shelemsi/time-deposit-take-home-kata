@@ -9,8 +9,8 @@ class TimeDeposit:
 class TimeDepositCalculator:
 
     def update_balance(self,xs):
-        interest = 0
         for td in xs:
+            interest = 0
             if td.days > 30:
                 if td.planType == 'student':
                     if td.days < 366:
